@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4: CARRITO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<style>
+    .item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<body>
+
+
+    <body>
+        <div id='app'>
+
+            <div class="jumbotron jumbotron-fluid" style="background-image: url(resources/img/wood-background.png);">
+                <div class="text-white text-center py-5 px-4">
+                    <div>
+                        <h1 class="card-title h1-responsive pt-3 mb-3 font-bold"><strong>BIENVENIDO A LA TIENDA
+                            </strong>
+                        </h1>
+                        <h2 class="mx-5 mb-5">Vinoteca UTN Mar del Plata</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <!-- PANEL CARRITO -->
+                    <div class="col-lg-4 d-lg-block mt-5">
+                        <li class="list-group-item success mr-3 bg-success text-white text-center"><strong>CARRITO <span
+                                    class="fa fa-shopping-cart mr-3"></span></strong></li>
+                        <div class="list-group mr-3" id="cart-items">
+                        </div>
+                        <h3 class="text-center mt-3" id="total"></h3>
+                        <div class="col text-center mt-3">
+                            <button hidden="true" type="button" class="btn center-block btn-success"
+                                id="finishButton">Finalizar Compra</button>
+                        </div>
+                    </div>
+
+
+                    <!-- ARTICULOS -->
+                    <div class="col-lg-8">
+                        <div class="row mt-4" id="article-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-5 bg-dark mt-5">
+            <p class="m-0 text-center text-white">Universidad Tecnológica Nacional Mar del Plata</p>
+        </footer>
+
+        <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    </body>
+
+</html>
